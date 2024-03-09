@@ -29,7 +29,7 @@ const Products = () => {
                         id: {product.id}<br/>
                         name: {product.name}<br/>
                         category: {product.category}<br/>
-                        price: {product.price}<br/>
+                        price: {product.price}INR<br/>
                         stockQuantity: {product.stockQuantity}<br/>
                         <button onClick={()=>{handleDel(product.id)}}>delete</button>
                         <button onClick={()=>{handleEdit(product.id)}}>edit</button>
