@@ -15,9 +15,10 @@ export function ProductForm(props) {
         productsDispatch({type: 'ADD_PRO', payload: data})
         cancel()
     }
-    const handleEdit = () => {
+    const handleEdit = (e) => {
         e.preventDefault()
         const data = {id: id1,name, category: cat, price: Number(price), stockQuantity:stock}
+        console.log(data)
         productsDispatch({type: 'EDIT_PRO', payload: data})
         edit()
     }
